@@ -1,0 +1,23 @@
+EL PROPOSITO ESPECIFICO DE ESTE CONTENEDOR ES SERVER COMO BASE PARA EL DESARROLLO EN PROGRAMAS PHP
+UTILIZANDO 
+LOS SIGUIENTES SERVICIOS 
+php
+- webserver (apache with php)   | Port - 80:80 For HTTP, Port - 443 For HTTPS
+- mariadb                       | Port - 3306:3306
+- phpmyadmin                    | Post - 8081:80
+- varnish                       | Port - 8082:80
+- elasticsearch                 | Port - 9200:9200
+- mailhog                       | Port - 8025 For UI, Port - 1025 For SMTP Server
+- ngrok                         | Port - 4040
+
+
+----------------------------------------------------------------
+guiandonos por el docker de ejemplo inicial, 
+debemos ejecutar el bash docker-init para configurar el php
+------------------------------------------------------------------
+
+para crear la imagen ejecutar:
+myxampp: nombre de la imagen
+1.0 : tag de la imagen
+docker build -t myxampp:1.0 . 
+ 
